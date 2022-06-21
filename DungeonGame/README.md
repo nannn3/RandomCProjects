@@ -1,1 +1,2 @@
 # A simple game that works by reading files from the Room files folder to display rooms in a linux shell. Good practice for file I/O in C #
+I should probably note that I didn't write the roomfiles, just the code to interact with them.
