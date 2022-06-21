@@ -1,6 +1,6 @@
 all: main
 
-Lab4: main.c rpn.o stack.o
+main: main.c rpn.o stack.o
 	gcc -Wall main.c rpn.o stack.o -o RPN
 
 stack_test: stack_test.c stack.o 
@@ -15,3 +15,7 @@ stack.o: stack.c
 rpn.o: rpn.c
 	gcc -Wall -c rpn.c
 
+clean:
+	rm -f *.o
+	rm -f stack_test
+	rm -f rpn_test

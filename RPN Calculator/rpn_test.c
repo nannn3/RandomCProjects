@@ -1,25 +1,13 @@
 // **** Include libraries here ****
-// Standard libraries
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-
-//CMPE13 Support Library
-#include "BOARD.h"
-
-
 
 // User libraries
 #include "rpn.h"
 
 int main() {
-    BOARD_Init();
     int error;
 
     printf("\n###### Beginning trkmille's rpn test harness: ####\n\n");
 
-    //What follows is starter code.  You will need to modify it!
-    // will I? This seems like a perfectly fine first test.
     char test0[] = "1 1 +";
     double result0;
     double expected0 = 2;
@@ -75,7 +63,6 @@ int main() {
     ProcessBackspaces(test_pb1);
     printf("result    : %s\n", test_pb1);
     printf("should be : 1234\n");
-    BOARD_End();
     while (1);
 }
 

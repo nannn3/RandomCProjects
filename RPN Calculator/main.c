@@ -1,11 +1,4 @@
 // **** Include libraries here ****
-// Standard libraries
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-
-//CMPE13 Support Library
-//#include "BOARD.h"
 
 
 
@@ -23,7 +16,7 @@ int main() {
 
     printf("Welcome to trkmille'S RPN calculator.  Compiled on %s %s\n", __DATE__, __TIME__);
     while (1) {
-        printf("Enter floats and + - / * in RPN format:\n");
+        printf("Enter floats and + - / * in RPN format or Q to quit:\n");
         fgets(rpn_sentence, sizeof (rpn_sentence), stdin);
         if (rpn_sentence[strlen(rpn_sentence) - 1] != '\n') {
             while (getchar() != '\n'); //flush the input buffer if there's leftover.

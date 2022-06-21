@@ -1,8 +1,6 @@
 #ifndef STACK_H
 #define STACK_H
-
-// Include BOARD.h so we can use the return values and the boolean defines.
-#include "BOARD.h"
+#include "DEF.h"    
 
 // Keep a fixed stack size as a constant. This macro should be used to avoid "magic numbers."
 // For example, finding the last element of the stack should be done with

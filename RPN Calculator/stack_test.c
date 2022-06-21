@@ -1,17 +1,9 @@
 // **** Include libraries here ****
-// Standard libraries
-#include <stdio.h>
-
-//CMPE13 Support Library
-#include "BOARD.h"
-
 
 // User libraries
 #include "stack.h"
-
+//#include "DEF.h"
 int main() {
-    BOARD_Init();
-
     printf("\n###### Beginning trkmille's stack test harness: ####\n\n");
 
     //What follows is starter code.  You will need to modify it!
@@ -103,9 +95,7 @@ int main() {
     printf("(%d/%d) PASSED StackIsEmpty()\n", EmptyTest, EmptyTestsTot);
     printf("(%d/%d) PASSED StackIsFull()\n", FullTest, FullTestsTot);
     printf("(%d/%d) PASSED StackGetSize()\n", SizeTest, SizeTestsTot);
-    BOARD_End();
 
-    while (1);
     return 0;
 }
 

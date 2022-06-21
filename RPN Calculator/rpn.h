@@ -1,7 +1,6 @@
 #ifndef RPN_H
 #define RPN_H
-
-
+#include "DEF.h"
 //Define RPN errors that could occur during execution:
 enum rpn_error{
     RPN_NO_ERROR = 0,

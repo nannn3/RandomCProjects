@@ -4,11 +4,10 @@
  *
  * Created on April 18, 2022, 7:52AM
  */
-#include<stdio.h>
-#include<string.h>
-
+#include "DEF.h"
 #include "rpn.h"
 #include "stack.h"
+
 
 int RPN_Evaluate(char * rpn_string, double * result) {
     struct Stack stack = {};
@@ -67,6 +66,9 @@ int RPN_Evaluate(char * rpn_string, double * result) {
                 }
                 *result = o2 / o1;
                 StackPush(&stack, *result);
+            }else if(*token == 'q' || *token == 'Q'){
+                printf("Have a good day!\n");
+                exit(0);
             } else {
                 return RPN_ERROR_INVALID_TOKEN; //Anything that's not a number or +,-,*,/
             }
