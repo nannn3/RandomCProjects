@@ -3,3 +3,4 @@ Just some small projects that are not part of anything bigger. More or less just
 
 currently completed projects:
 * RPN calculator
+* Dungeon Crawl Game
