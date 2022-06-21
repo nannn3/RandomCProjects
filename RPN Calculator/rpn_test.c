@@ -63,7 +63,7 @@ int main() {
     ProcessBackspaces(test_pb1);
     printf("result    : %s\n", test_pb1);
     printf("should be : 1234\n");
-    while (1);
+    exit(0);
 }
 
 
